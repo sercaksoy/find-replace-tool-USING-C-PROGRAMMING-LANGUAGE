@@ -18,15 +18,14 @@ Hey ! It is my third assignment from "Data Structures and Algorithm" class that 
   Let's think we are on the some character that doesn't exist in our word. So it is impossible to find the word in wordsize length. That means we are initializing the word size as jump score for all out of word letters. Alphabet - {w,h,o,c,a,r,e,s} have jump score 8.
     Now let's think if you're on the some existing character, that means you need to shift your word wordsize-i (i is where is the character in the word.) So it looks like this ; w -> 8 - 1 = 7 , h -> 8 - 2 = 6, .... , e -> 8 - 7 = 1 and thats it because if you find s that means you are on the lastcharacter and try to match words.(Exception : If you have repetitive letters you need to take the most right ones jump score for each.)
   # Authentication for the above example
-  <p>
-  Inserting a 'f' to point where I am showing.</br>
-    ajahoekrewhocaresbbbb -> Starting from the index 8.</br>
-           f              -> found 'r' jump 2.</br>
-    ajahoekrewhocaresbbbb </br>
-             f            -> found 'w' jump 7.</br>
-    ajahoekrewhocaresbbbb</br>
-                    f     -> found 's' try to match words.</br>
-    ajahoekrewhocaresbbbb</br>
-             whocares     -> MATCH! Word found  .</br>
-   </p>
-   # We found the word OKAY, but how do we replace it ??
+    Inserting a 'f' to point where I am showing.
+    ajahoekrewhocaresbbbb -> Starting from the index 8.
+           f              -> found 'r' jump 2.
+    ajahoekrewhocaresbbbb
+             f            -> found 'w' jump 7.
+    ajahoekrewhocaresbbbb
+                    f     -> found 's' try to match words.
+    ajahoekrewhocaresbbbb
+             whocares     -> MATCH! Word found .
+   
+  # We found the word OKAY, but how do we replace it ??
