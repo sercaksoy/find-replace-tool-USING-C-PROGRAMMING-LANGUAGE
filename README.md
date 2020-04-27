@@ -28,4 +28,5 @@ Hey ! It is my third assignment from "Data Structures and Algorithm" class that 
     ajahoekrewhocaresbbbb
              whocares     -> MATCH! Word found .
    
-  # We found the word OKAY, but how do we replace it ??
+  # We found the word OKAY, but how do we replace it ?
+  After getting all found indexes we need to shift all other characters depends on replace word size - find word size if this value is positive that means your text is going to expand, if it is 0 no need to shift characters in the text. And if it is negative you have to shift your characters most left possible. After subtraction it needed to multiply with the times we found the find word. Then do the necessary operations. My code is what I told in this section. If you couldn't understand anything you can always sen me e-mails.
