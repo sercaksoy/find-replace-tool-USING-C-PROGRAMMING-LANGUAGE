@@ -1,5 +1,7 @@
 # find-replace-tool-USING-C-PROGRAMMING-LANGUAGE
 Hey ! It is my third assignment from "Data Structures and Algorithm" class that I took at Yildiz Technical University. This repository contains; code of program , screenshots while it is processing , and Assignment's description.
+# CAN YOU PLEASE JUST GIVE ME THE FUNCTION NAMES
+<img src="https://github.com/sercaksoy/find-replace-tool-USING-C-PROGRAMMING-LANGUAGE/blob/master/functions/functions.png">
 # What is a Find and Replace tool
   Find and Replace tool is helping to user to change a word or a string to another string. This tool consists of 2 stages;
   1. Finding the string given by the user.
@@ -11,7 +13,7 @@ Hey ! It is my third assignment from "Data Structures and Algorithm" class that 
   1. Allocating a 256*(int) byte array to store which character has how much jump score. 256 stems from ASCII table.
   2. Creating an array with a class storing a char with a jump score. This arrays size depends on find words size and exact same of              it(actually you can count repetitive letters as one).
   This is how I implemented it :
-  buraya img gelecektir
+  <img src="https://github.com/sercaksoy/find-replace-tool-USING-C-PROGRAMMING-LANGUAGE/blob/master/functions/createTable.png">
   # Then what ?
   Then your program is not searching the find word char by char but a jumping score. It works like; let's say your trying to find the word "whocares". This jump method repeats until it finds the last character of our word. Then rewind it. So we need to find 's' in our text. Let's say our text be ajahoekrewhocaresbbbb , now we need to find s in it. To find our last char, that means we can start to look for our word from |whocares| = 8 index. But first we need to create our table to get jump scores for each character. 
   # Creating bad match table for the above example
@@ -30,3 +32,5 @@ Hey ! It is my third assignment from "Data Structures and Algorithm" class that 
    
   # We found the word OKAY, but how do we replace it ?
   After getting all found indexes we need to shift all other characters depends on replace word size - find word size if this value is positive that means your text is going to expand, if it is 0 no need to shift characters in the text. And if it is negative you have to shift your characters most left possible. After subtraction it needed to multiply with the times we found the find word. Then do the necessary operations. My code is what I told in this section. If you couldn't understand anything you can always sen me e-mails.
+  # Step by step presentation
+  <img src="https://github.com/sercaksoy/find-replace-tool-USING-C-PROGRAMMING-LANGUAGE/blob/master/examples/stepbystep.png">
